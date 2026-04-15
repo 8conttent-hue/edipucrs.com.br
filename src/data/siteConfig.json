@@ -1,0 +1,53 @@
+{
+  "name": "EDIPUCRS",
+  "slug": "edipucrs.com.br",
+  "description": "PORQUE FAZEMOS O QUE FAZEMOS? Nossa Equipe São vários canais que visam fomentar o empreendedorismo e dar visibilidade aos pequenos negócios e as várias iniciativas. Iniciado em agosto de 2016, o nosso Blog de deu início ao movimento de resistência à crise no auge do impeachment da ex-presidente(A) Dilma. Queremos um empreendedor em cada lar! E por isso mesmo, compartilhamos aqui os nossos melhores conteúdos, tudo gratuitamente, sem esquecer absolutamente nada, sem esconder informações importantes e necessárias. Hoje, você pode aprender tudo que precisa pra criar ou levantar de vez esse seu negócio, seja ele qual for! Junte-se a esse movimento! levante nossa bandeira! e navegue no nosso Blog Já!",
+  "url": "https://edipucrs.com.br",
+  "niche": "Negócios e Empreendedorismo",
+  "keywords": "PORQUE FAZEMOS O QUE FAZEMOS Nossa Equipe Sao varios canais que visam",
+  "email": "contato@edipucrs.com.br",
+  "palette": "sunset",
+  "colors": {
+    "primary": "#f97316",
+    "accent": "#c2410c",
+    "dark": "#431407"
+  },
+  "headerContrast": "light",
+  "font": "inter",
+  "fontFamily": "'Inter', sans-serif",
+  "fontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
+  "components": {
+    "header": "Header-F",
+    "hero": "Hero-G",
+    "features": "Features-F",
+    "about": "About-F",
+    "posts": "Posts-H",
+    "footer": "Footer-E",
+    "sobre": "Sobre-J",
+    "contato": "Contato-E"
+  },
+  "menu": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Sobre",
+      "href": "/sobre"
+    },
+    {
+      "label": "Contato",
+      "href": "/contato"
+    }
+  ],
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  }
+}

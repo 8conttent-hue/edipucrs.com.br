@@ -1,0 +1,48 @@
+---
+// Sobre-J: Editorial Minimal - Design de luxo e tipografia de alto padrão
+interface Stat { value: string; label: string; }
+interface Props {
+  title: string;
+  subtitle?: string;
+  content?: string;
+  image: string;
+  stats?: Stat[];
+  content?: string;
+}
+const { title, subtitle, content, image, stats } = Astro.props;
+const desc = content || subtitle || '';
+---
+<section class="py-24 bg-white overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-32 group">
+       <span class="text-primary font-black uppercase tracking-[0.5em] text-[10px] mb-8 block transition-all group-hover:tracking-[0.8em]">Editorial de Pesquisa</span>
+       <h1 class="text-6xl md:text-8xl font-black text-dark tracking-tighter leading-none mb-12 italic uppercase">{title}</h1>
+       <div class="relative max-w-2xl mx-auto">
+          <svg class="absolute -top-10 -left-10 w-20 h-20 text-primary/10 select-none" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8h6v-8h-6zm12 8h6v-8h-6v8zm-12 0c0 4.418-3.582 8-8 8v-4c2.209 0 4-1.791 4-4h4zm12 0c0 4.418-3.582 8-8 8v-4c2.209 0 4-1.791 4-4h4z"/></svg>
+          <p class="text-2xl md:text-3xl font-light text-gray-400 italic leading-snug relative z-10 transition-colors hover:text-dark">
+             "{desc}"
+          </p>
+       </div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="mb-32 relative overflow-hidden group rounded-[3rem] shadow-2xl">
+       <img src={image} class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" alt="Editorial Visual" />
+       <div class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-all"></div>
+       <!-- Signature Overlay -->
+       <div class="absolute bottom-12 right-12 text-white text-4xl font-serif italic opacity-40 group-hover:opacity-100 transition-opacity">
+          {title.split(' ')[0]} {title.split(' ')[1] || ''}
+       </div>
+    </div>
+
+    <!-- Stats Matrix -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-12 pt-12 border-t border-gray-100">
+       {stats?.map(s => (
+         <div class="group">
+            <div class="text-4xl font-black text-dark mb-2 group-hover:text-primary transition-colors tracking-tighter">{s.value}</div>
+            <div class="text-[10px] font-black uppercase text-gray-300 tracking-widest leading-none group-hover:text-dark transition-colors">{s.label}</div>
+         </div>
+       ))}
+    </div>
+  </div>
+</section>

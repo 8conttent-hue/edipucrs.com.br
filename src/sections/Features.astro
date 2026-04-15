@@ -1,0 +1,32 @@
+---
+// Features-F: Numerical Stats - Foco em autoridade e dados
+interface Item { icon: string; title: string; desc: string; }
+interface Props { title: string; items: Item[]; }
+const { title, items } = Astro.props;
+---
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-20">
+      <h2 class="text-3xl md:text-6xl font-black text-dark tracking-tighter mb-6">{title}</h2>
+      <p class="text-gray-400 font-medium uppercase tracking-[0.2em] text-xs">Precisão em cada métrica</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      {items.map((item, i) => (
+        <div class="text-center group">
+          <div class="inline-flex items-center justify-center w-20 h-20 rounded-[2.5rem] bg-gray-50 text-dark mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[15deg]">
+             <span class="text-3xl">{item.icon}</span>
+          </div>
+          <div class="text-4xl md:text-5xl font-black text-dark mb-4 tracking-tighter group-hover:text-primary transition-colors">
+             {/* Simula um número grande se o ícone não for numérico */}
+             {item.title.match(/\d+/) ? item.title : `0${i + 1}`}
+          </div>
+          <h3 class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-4">{item.title}</h3>
+          <p class="text-gray-500 text-sm leading-relaxed px-4">
+            {item.desc}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "EDIPUCRS — Empreenda com a EDIPUCRS",
+    "description": "Fomentando o empreendedorismo e dando visibilidade aos pequenos negócios."
+  },
+  "hero": {
+    "title": "Empreenda com a EDIPUCRS",
+    "subtitle": "Fomentando o empreendedorismo e dando visibilidade aos pequenos negócios.",
+    "btnText": "Junte-se a nós!",
+    "bgImage": "/images/hero.jpg",
+    "btnLink": "/blog"
+  },
+  "features": {
+    "title": "Por que escolher a EDIPUCRS?",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Conteúdo Exclusivo",
+        "desc": "Acesse materiais ricos e gratuitos que cobrem todas as etapas do empreendedorismo."
+      },
+      {
+        "icon": "🌟",
+        "title": "Visibilidade para Pequenos Negócios",
+        "desc": "Promovemos iniciativas que ajudam pequenos empreendedores a se destacarem no mercado."
+      },
+      {
+        "icon": "🤝",
+        "title": "Comunidade Ativa",
+        "desc": "Participe de uma rede colaborativa onde todos compartilham experiências e aprendem juntos."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre a EDIPUCRS",
+    "desc": "Iniciamos nossa jornada em agosto de 2016, em um momento crucial do país. O nosso blog se tornou um espaço de resistência e aprendizado, onde cada conteúdo é pensado para capacitar novos empreendedores. Queremos um empreendedor em cada lar!",
+    "stats": [
+      {
+        "value": "7",
+        "label": "Anos de Experiência"
+      },
+      {
+        "value": "100+",
+        "label": "Conteúdos Disponíveis"
+      }
+    ],
+    "image": "/images/about.jpg",
+    "btnText": "Saiba Mais",
+    "btnLink": "/sobre"
+  },
+  "posts": {
+    "title": "Últimos Artigos",
+    "limit": 3,
+    "btnText": "Ver Blog",
+    "btnLink": "/blog"
+  }
+}

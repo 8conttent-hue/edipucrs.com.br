@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Sobre Nós",
+    "description": "Conheça o EDIPUCRS"
+  },
+  "hero": {
+    "title": "Sobre Nós",
+    "subtitle": "Iniciamos nossa jornada em agosto de 2016, em um momento crucial do país. O nosso blog se tornou um espaço de resistência e aprendizado, onde cada conteúdo é pensado para capacitar novos empreendedores. Queremos um empreendedor em cada lar!"
+  },
+  "content": "Na EDIPUCRS, acreditamos no poder do empreendedorismo como uma ferramenta de transformação social e econômica. Nossa missão é trazer à tona o potencial de cada pequeno negócio, oferecendo orientações práticas e acessíveis.",
+  "mission": "Empoderar empreendedores e impulsionar pequenas iniciativas com informação e suporte!",
+  "image": "/images/sobre.jpg",
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Artigos"
+    },
+    {
+      "value": "100k+",
+      "label": "Leitores"
+    },
+    {
+      "value": "5",
+      "label": "Redatores"
+    }
+  ],
+  "team": []
+}
